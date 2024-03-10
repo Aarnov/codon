@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codon by Name</title>
+</head>
+<body>
+    <h1>Codon by Name: {{ amino_acid }}</h1>
+    {% if matching_codons %}
+        <ul>
+            {% for codon in matching_codons %}
+                <li>{{ codon }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching codons found for the given name.</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exact Codon Input</title>
+</head>
+<body>
+    <h1>Enter Exact Codon</h1>
+    <form action="{{ url_for('exact_codon') }}" method="post">
+        <label for="first_base">First base:</label>
+        <select name="first_base" id="first_base">
+            <option value="A">A</option>
+            <option value="U">U</option>
+            <option value="C">C</option>
+            <option value="G">G</option>
+        </select><br><br>
+        <label for="second_base">Second base:</label>
+        <select name="second_base" id="second_base">
+            <option value="A">A</option>
+            <option value="U">U</option>
+            <option value="C">C</option>
+            <option value="G">G</option>
+        </select><br><br>
+        <label for="third_base">Third base:</label>
+        <select name="third_base" id="third_base">
+            <option value="A">A</option>
+            <option value="U">U</option>
+            <option value="C">C</option>
+            <option value="G">G</option>
+        </select><br><br>
+        <input type="submit" value="Find Codon">
+    </form>
+    <a href="/">Back</a>
+</body>
+</html>

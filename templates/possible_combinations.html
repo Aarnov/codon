@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Possible Combinations</title>
+</head>
+<body>
+    <h1>Possible Combinations for Sequence: {{ sequence }}</h1>
+    <ul>
+        {% for codon in all_codons %}
+            <li>{{ codon }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
