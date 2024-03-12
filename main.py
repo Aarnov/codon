@@ -58,3 +58,9 @@ def codon_by_name():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+#write the anticodon for the given codon.
+#take an mrna chain and display all the amino acids formed inside it .
+#considerr the start codon and then display all the combinations after it untill stop comes .
