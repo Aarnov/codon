@@ -6,16 +6,19 @@
     <title>Codon by Name</title>
 </head>
 <body>
-    <h1>Codon by Name: {{ amino_acid }}</h1>
-    {% if matching_codons %}
-        <ul>
-            {% for codon in matching_codons %}
-                <li>{{ codon }}</li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No matching codons found for the given name.</p>
-    {% endif %}
-    <a href="/">Back</a>
+    <h1>Matching Codons for {{ amino_acid }}</h1>
+    <ul>
+        {% for codon in matching_codons %}
+            <li>{{ codon }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Information about {{ amino_acid }}</h2>
+    <ul>
+        {% for info in amino_acid_info %}
+            <li>{{ info }}</li>
+        {% endfor %}
+    </ul>
+
+<a href="/">Back</a>
 </body>
 </html>

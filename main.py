@@ -1,14 +1,15 @@
-# main.py
 from flask import Flask, render_template, request
-from codon_table import codon_table
+from codon_table import codon_table, amino_acid_info
 
 app = Flask(__name__)
+
 
 def generate_all_codons(sequence):
     sequence = set(sequence.upper())
     all_codons = codon_table.keys()
     matching_codons = [(codon, codon_table.get(codon, "Unknown")) for codon in all_codons if set(codon) == sequence]
     return matching_codons
+
 
 def find_matching_codons(sequence):
     sequence = sequence.capitalize()
@@ -20,12 +21,27 @@ def find_matching_codons(sequence):
         matching_codons = [codon for codon in all_codons if set(codon) == sequence]
     return matching_codons
 
+
 def find_matching_codons_by_name(amino_acid):
-    return [codon for codon, acid in codon_table.items() if acid.lower() == amino_acid.lower()]
+    matching_codons = []
+    amino_acid_information = "Information not available"  # Default value if amino acid info is not found
+
+    amino_acid_lower = amino_acid.lower()  # Convert to lowercase for case-insensitive comparison
+
+    for codon, acid in codon_table.items():
+        if acid.lower() == amino_acid_lower:
+            matching_codons.append(codon)
+
+    if amino_acid_lower in amino_acid_info:
+        amino_acid_information = amino_acid_info[amino_acid_lower]
+
+    return matching_codons, amino_acid_information
+
 
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
 
 @app.route("/exact_codon", methods=["GET", "POST"])
 def exact_codon():
@@ -35,8 +51,19 @@ def exact_codon():
         third_base = request.form["third_base"]
         codon = first_base + second_base + third_base
         amino_acid = codon_table.get(codon, "Unknown")
-        return render_template("exact_codon.html", codon=codon, amino_acid=amino_acid)
-    return render_template("exact_codon_input.html")
+
+        # Retrieve amino acid information
+        amino_acid_information = "Information not available"
+        amino_acid_lower = amino_acid.lower()
+        if amino_acid_lower in amino_acid_info:
+            amino_acid_information = amino_acid_info[amino_acid_lower]
+
+        return render_template("exact_codon.html", codon=codon, amino_acid=amino_acid,
+                               amino_acid_info=amino_acid_information)
+    else:
+        # If it's a GET request, render the input form
+        return render_template("exact_codon_input.html")
+
 
 @app.route("/possible_combinations", methods=["GET", "POST"])
 def possible_combinations():
@@ -47,20 +74,17 @@ def possible_combinations():
     else:
         return render_template("possible_combinations_input.html")
 
+
 @app.route("/codon_by_name", methods=["GET", "POST"])
 def codon_by_name():
     if request.method == "POST":
         amino_acid = request.form["amino_acid"]
-        matching_codons = find_matching_codons_by_name(amino_acid)
-        return render_template("codon_by_name.html", amino_acid=amino_acid, matching_codons=matching_codons)
+        matching_codons, amino_acid_information = find_matching_codons_by_name(amino_acid)
+        return render_template("codon_by_name.html", amino_acid=amino_acid, matching_codons=matching_codons,
+                               amino_acid_info=amino_acid_information)
     else:
         return render_template("codon_by_name_input.html")
 
+
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-#write the anticodon for the given codon.
-#take an mrna chain and display all the amino acids formed inside it .
-#considerr the start codon and then display all the combinations after it untill stop comes .

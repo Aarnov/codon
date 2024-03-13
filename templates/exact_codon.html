@@ -6,9 +6,24 @@
     <title>Exact Codon</title>
 </head>
 <body>
-    <h1>Exact Codon and Amino Acid</h1>
+    <h1>Exact Codon</h1>
     <p>Codon: {{ codon }}</p>
     <p>Amino Acid: {{ amino_acid }}</p>
-    <a href="/">Back</a>
+    {% if amino_acid_info != "Information not available" %}
+        <h2>Amino Acid Information : {{ amino_acid }}</h2>
+        <ul>
+            {% for info in amino_acid_info %}
+                <li>{{ info }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No information available for this amino acid.</p>
+    {% endif %}
+
+<a href="/">Back</a>
 </body>
 </html>
+
+
+
+
