@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0b19703-eac1-46f9-9460-cc8e041a9598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aminoacid_images/85870838-leucine-l-leucine-leu-l-amino-acid-molecule-skeletal-formula.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codon_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/codon_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/codon_by_name.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/codon_by_name.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/codon_by_name_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/codon_by_name_input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/exact_codon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exact_codon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/possible_combinations_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/possible_combinations_input.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +47,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aarno\PycharmProjects\codon\static" />
+    </key>
+  </component>
   <component name="RunManager" selected="Flask server.codon">
     <configuration name="codon" type="PythonConfigurationType" factoryName="Python">
       <module name="codon" />
@@ -105,7 +104,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -125,7 +124,9 @@
       <workItem from="1710097996395" duration="1486000" />
       <workItem from="1710099538980" duration="890000" />
       <workItem from="1710228475692" duration="1895000" />
-      <workItem from="1710343505220" duration="4293000" />
+      <workItem from="1710343505220" duration="4395000" />
+      <workItem from="1710525975557" duration="162000" />
+      <workItem from="1710526317460" duration="1124000" />
     </task>
     <servers />
   </component>
@@ -157,6 +158,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/codon$main.coverage" NAME="main Coverage Results" MODIFIED="1710098981233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/codon$codon.coverage" NAME="codon Coverage Results" MODIFIED="1710347773701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/codon$codon.coverage" NAME="codon Coverage Results" MODIFIED="1710527429558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
