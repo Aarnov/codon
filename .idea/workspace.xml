@@ -5,8 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0b19703-eac1-46f9-9460-cc8e041a9598" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/mrna_chain_input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mrna_chain_result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/aos/aos.cjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.cjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/aos/aos.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/aos/aos.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/aos/aos.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/aos/aos.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/aos/aos.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap-icons/bootstrap-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap-icons/bootstrap-icons.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap-icons/bootstrap-icons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap-icons/bootstrap-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/bootstrap-icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/glightbox/css/glightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/glightbox/css/glightbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/glightbox/css/plyr.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/plyr.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/glightbox/css/plyr.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/css/plyr.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/glightbox/js/glightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/glightbox/js/glightbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/php-email-form/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/purecounter/purecounter_vanilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/purecounter/purecounter_vanilla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/purecounter/purecounter_vanilla.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/purecounter/purecounter_vanilla.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/swiper/swiper-bundle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/swiper/swiper-bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/vendor/swiper/swiper-bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/swiper/swiper-bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/codon_by_name_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/codon_by_name_input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/exact_codon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exact_codon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exact_codon_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exact_codon_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/possible_combinations_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/possible_combinations_input.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,6 +131,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Flask server.codon">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codon/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="codon" type="PythonConfigurationType" factoryName="Python">
       <module name="codon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +185,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -112,6 +193,11 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -126,7 +212,9 @@
       <workItem from="1710228475692" duration="1895000" />
       <workItem from="1710343505220" duration="4395000" />
       <workItem from="1710525975557" duration="162000" />
-      <workItem from="1710526317460" duration="1124000" />
+      <workItem from="1710526317460" duration="1417000" />
+      <workItem from="1710572766744" duration="4239000" />
+      <workItem from="1710609506068" duration="10999000" />
     </task>
     <servers />
   </component>
@@ -157,7 +245,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/codon$main.coverage" NAME="main Coverage Results" MODIFIED="1710098981233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/codon$codon.coverage" NAME="codon Coverage Results" MODIFIED="1710527429558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/codon$main.coverage" NAME="main Coverage Results" MODIFIED="1710620422951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/codon$codon.coverage" NAME="codon Coverage Results" MODIFIED="1710572990300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

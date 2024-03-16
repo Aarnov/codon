@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRNA Chain Input</title>
+    <style>
+        textarea {
+            width: 300px; /* Initial width */
+            height: 50px; /* Initial height */
+            resize: vertical; /* Allow vertical resizing only */
+        }
+    </style>
+</head>
+<body>
+    <h1>MRNA Chain Input</h1>
+    <form action="/mrna_chain" method="POST">
+        <textarea name="mrna_sequence" placeholder="Enter the MRNA sequence..." required></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* Fonts */
+:root {
+  --font-primary: "Montserrat", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-primary: #008374;
+  --color-secondary: #f85a40;
+}
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-primary);
+  color: #222222;
+}
+
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00b6a1;
+  text-decoration: none;
+}
+
+
+
+
+
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  height: 90px;
+  background-color: var(--color-primary);
+}
+
+.header.sticked {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+.header .logo h1 span {
+  color: #f96f59;
+}
+
+.sticked-header-offset {
+  margin-top: 70px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  position: relative;
+  background: var(--color-primary);
+  padding: 30px 0 0 0;
+}
+
+
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+
+
+.hero .icon-box {
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #008d7d;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.hero .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.hero .icon-box .title a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+
+/* Adjust the margin between icon boxes */
+.hero .icon-box {
+  margin-bottom: 20px;
+}
+
+/* Display icon boxes in a flex container */
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Set the width of icon boxes for different screen sizes */
+.hero .col-xl-3,
+.hero .col-md-6 {
+  flex: 0 0 calc(25% - 20px); /* Adjust as needed */
+  max-width: calc(25% - 20px); /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+/* Ensure icon boxes are centered horizontally */
+.hero .icon-box {
+  text-align: center;
+}
+
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: rgba(0, 131, 116, 0.9);
+
+  }
+
+
+
+
+
