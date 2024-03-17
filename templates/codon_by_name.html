@@ -1,41 +1,57 @@
-<html><head><link href="../static/assets/css/main.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../static/assets/css/main.css" rel="stylesheet">
     <title>Codon by Name</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
-    <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <style>
+        html,
+        body{
+            background-color: #008374; /* Set background color for both html and body */
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
     <section class="vh-100 gradient-custom">
-      <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card bg-dark text-white" style="border-radius: 1rem;">
-              <div class="card-body p-5 text-center">
-    
-                <div class="mb-md-5 mt-md-4 pb-5">
-    
-                  <h2 class="fw-bold mb-2 text-uppercase">Codon.</h2>
-                  <p class="text-white-50 mb-5">
-                    <h3>Matching Codons for {{ amino_acid }}</h3>
-    <ul>
-        {% for codon in matching_codons %}
-            <li>{{ codon }}</li>
-        {% endfor %}
-    </ul>
-    <h3>Information about {{ amino_acid }}</h3>
-    <ul>
-        {% for info in amino_acid_info %}
-            <li>{{ info }}</li>
-        {% endfor %}
-    </ul>
-                  </p>
-                  
-                 
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="card-body p-5">
+
+                            <div class="mb-md-5 mt-md-4">
+
+                                <h2 class="fw-bold mb-2 text-uppercase text-center">Codon.<span style="color: #f96f59;">Matcher</span></h2><br><br>
+                                <h5 class="text-center-all">Matching Codons for {{ amino_acid }}:</h5>
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    {% for codon in matching_codons %}
+                                        <li><div class="text-center" ><p class="mb-3 text-center-all"><b><span style="color: #f96f59;">{{ codon }}</span></b></p></div></li>
+                                    {% endfor %}
+                                </ul>
+                                <h5 class="text-center-all">Information about {{ amino_acid }}:</h5>
+                                <ul>
+                                    {% for info in amino_acid_info %}
+                                    <li><p class="mb-1 text-left-all">{{ info }}</p></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="text-center mt-3">
+                            <a class="fw-bold mb-2 text-uppercase" href="/">Back</a>
+                        </div>
+
+                        </div>
+                    </div>
                 </div>
-                <a class="fw-bold mb-2 text-uppercase" href="/">Back</a>
-    
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    </body>
-    </html>
+</body>
+
+</html>

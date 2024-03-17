@@ -1,5 +1,12 @@
 <html><head><link href="../static/assets/css/main.css" rel="stylesheet">
     <title>Codon by Name</title>
+    <style>html,
+        body {
+            background-color: rgba(0, 131, 116, 0.9); /* Set background color for both html and body */
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }</style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
     <body>
     <section class="vh-100 gradient-custom">
@@ -9,12 +16,12 @@
             <div class="card bg-dark text-white" style="border-radius: 1rem;">
               <div class="card-body p-5 text-center">
     
-                <div class="mb-md-5 mt-md-4 pb-5">
+                <div class="mb-md-5 mt-md-4 ">
     
-                  <h2 class="fw-bold mb-2 text-uppercase">Codon.</h2>
-                  <p class="text-white-50 mb-5">Please Enter Amino Acid Name:</p>
+                  <h2 class="fw-bold mb-2 text-uppercase">Codon.<span style="color: #f96f59;">Matcher</span></h2>
+                  <p class="text-white-50 ">Please Enter Amino Acid Name:</p>
                   <form action="/codon_by_name" method="post">
-                  <div class="form-outline form-white mb-4">
+                  <div class="form-outline form-white ">
                     <input type="text" name="amino_acid" class="form-control form-control-lg" />
                     <label class="form-label">
                     </label>

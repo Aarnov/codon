@@ -139,9 +139,9 @@ amino_acid_info = {
         "Found in protein-rich foods like meat, fish, dairy products, eggs, nuts, seeds, and certain grains."
     ],
     'stop': [
-        "UAA (UAG in mRNA): This stop codon is known as 'ochre.' It is the least common of the three stop codons and is recognized by release factor 1 (RF1) during translation termination.",
-        "UAG (UGA in mRNA): This stop codon is known as 'amber.' It is more common than UAA and is also recognized by release factor 1 (RF1) during translation termination.",
-        "UGA (UGA in mRNA): This stop codon is known as 'opal.' It is the most common of the three stop codons and is recognized by release factor 2 (RF2) during translation termination."
+        "UAA: This stop codon is known as 'ochre.' It is the least common of the three stop codons and is recognized by release factor 1 (RF1) during translation termination.",
+        "UAG: This stop codon is known as 'amber.' It is more common than UAA and is also recognized by release factor 1 (RF1) during translation termination.",
+        "UGA: This stop codon is known as 'opal.' It is the most common of the three stop codons and is recognized by release factor 2 (RF2) during translation termination."
     ],
     'tryptophan': [
         "Essential amino acid that the body cannot produce on its own and must obtain from the diet.",
@@ -213,9 +213,5 @@ amino_acid_info = {
         "Also plays a role in protein synthesis and metabolism.",
         "Found naturally in protein-rich foods like meat, poultry, fish, dairy products, and certain vegetables like tomatoes and mushrooms."
     ],
-    'stop': [
-        "UAA (UAG in mRNA): This stop codon is known as 'ochre.' It is the least common of the three stop codons and is recognized by release factor 1 (RF1) during translation termination.",
-        "UAG (UGA in mRNA): This stop codon is known as 'amber.' It is more common than UAA and is also recognized by release factor 1 (RF1) during translation termination.",
-        "UGA (UGA in mRNA): This stop codon is known as 'opal.' It is the most common of the three stop codons and is recognized by release factor 2 (RF2) during translation termination."
-    ]
+
 }

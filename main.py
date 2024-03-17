@@ -128,9 +128,10 @@ def exact_codon():
 @app.route("/possible_combinations", methods=["GET", "POST"])
 def possible_combinations():
     if request.method == "POST":
-        sequence = request.form["sequence"]
+        sequence = request.form["sequence"].upper()
         all_codons = generate_all_codons(sequence)
-        return render_template("possible_combinations.html", sequence=sequence, all_codons=all_codons)
+        all_codons_dict = dict(all_codons)
+        return render_template("possible_combinations.html", sequence=sequence, all_codons=all_codons_dict)
     else:
         return render_template("possible_combinations_input.html")
 
@@ -138,7 +139,7 @@ def possible_combinations():
 @app.route("/codon_by_name", methods=["GET", "POST"])
 def codon_by_name():
     if request.method == "POST":
-        amino_acid = request.form["amino_acid"]
+        amino_acid = request.form["amino_acid"].upper()
         matching_codons, amino_acid_information = find_matching_codons_by_name(amino_acid)
         return render_template("codon_by_name.html", amino_acid=amino_acid, matching_codons=matching_codons,
                                amino_acid_info=amino_acid_information)
