@@ -6,21 +6,76 @@
     <title>Exact Codon</title>
 </head>
 <body>
-    <h1>Exact Codon</h1>
-    <p>Codon: {{ codon }}</p>
-    <p>Amino Acid: {{ amino_acid }}</p>
-    <p>Anticodon: {{ anticodon }}</p>
-    {% if amino_acid_info != "Information not available" %}
-        <h2>Amino Acid Information</h2>
-        <ul>
-            {% for info in amino_acid_info %}
-                <li>{{ info }}</li>
-            {% endfor %}
-        </ul>
-        {% set image_path = url_for('static', filename='aminoacid_images/' + amino_acid.lower() + '.png') %}
-        <img src="{{ image_path }}" alt="{{ amino_acid }}" height="200" width="400">
-    {% else %}
-        <p>No information available for this amino acid.</p>
-    {% endif %}
+   
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codon by Name</title>
+</head>
+<body>
+    <h1>Matching Codons for {{ amino_acid }}</h1>
+    <ul>
+        {% for codon in matching_codons %}
+            <li>{{ codon }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Information about {{ amino_acid }}</h2>
+    <ul>
+        {% for info in amino_acid_info %}
+            <li>{{ info }}</li>
+        {% endfor %}
+    </ul>
+
+<a href="/">Back</a>
+</body>
+</html>
+<html><head><link href="../static/assets/css/main.css" rel="stylesheet">
+    <<title>Exact Codon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
+    <body>
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+    
+                <div class="mb-md-5 mt-md-4 pb-5">
+    
+                  <h2 class="fw-bold mb-2 text-uppercase">Codon.</h2>
+                  <p class="text-white-50 mb-5">
+                    <h3>Exact Codon</h3>
+                    <p>Codon: {{ codon }}</p>
+                    <p>Amino Acid: {{ amino_acid }}</p>
+                    <p>Anticodon: {{ anticodon }}</p>
+                    {% if amino_acid_info != "Information not available" %}
+                        <h4>Amino Acid Information</h4>
+                        <ul>
+                            {% for info in amino_acid_info %}
+                                <li>{{ info }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% set image_path = url_for('static', filename='aminoacid_images/' + amino_acid.lower() + '.png') %}
+                        <img src="{{ image_path }}" alt="{{ amino_acid }}" height="200" width="400">
+                    {% else %}
+                        <p>No information available for this amino acid.</p>
+                    {% endif %}
+                  </p>
+                  
+                 
+                </div>
+                <a class="fw-bold mb-2 text-uppercase" href="/">Back</a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+    </html>

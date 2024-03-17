@@ -1,23 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRNA Chain Input</title>
-    <style>
+<html><head><link href="../static/assets/css/main.css" rel="stylesheet">
+    <title>MRNA Chain Input</title><style>
         textarea {
             width: 300px; /* Initial width */
             height: 50px; /* Initial height */
             resize: vertical; /* Allow vertical resizing only */
         }
     </style>
-</head>
-<body>
-    <h1>MRNA Chain Input</h1>
-    <form action="/mrna_chain" method="POST">
-        <textarea name="mrna_sequence" placeholder="Enter the MRNA sequence..." required></textarea>
-        <br><br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
+    <body>
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+    
+                <div class="mb-md-5 mt-md-4 pb-5">
+    
+                  <h2 class="fw-bold mb-2 text-uppercase">Codon.</h2>
+                  <p class="text-white-50 mb-5">Please Enter MRNA Chain:</p>
+                  <form action="/mrna_chain" method="POST">
+                  <div class="form-outline form-white mb-4">
+                    <textarea name="mrna_sequence" placeholder="Enter The MRNA Sequence Here..." class="form-control form-control-lg" required></textarea><br><br>
+                    <label class="form-label">
+                    </label>
+                    </label>
+                  </div>
+                  <br><br>
+                  <button class="btn btn-outline-light btn-lg px-5" type="submit">Submit</button>
+                  </form>
+                </div>
+                <a class="fw-bold mb-2 text-uppercase" href="/">Back</a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+    </html>
