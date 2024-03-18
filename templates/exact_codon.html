@@ -31,7 +31,7 @@
                             {% set image_path = url_for('static', filename='aminoacid_images/' + amino_acid.lower() + '.png') %}
                             {% if image_path %}
                             <img src="{{ image_path }}" alt="{{ amino_acid }}" class="img-fluid mb-3"
-                                style="max-height: 200px;"> <!-- Adjusted image size and margin -->
+                                style="height: 150px; width: 340px;"> <!-- Adjusted image size and margin -->
                             {% else %}
                             <p>No image available for this amino acid.</p>
                             {% endif %}

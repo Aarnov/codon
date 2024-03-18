@@ -39,9 +39,9 @@ def find_matching_codons(sequence):
 
 def find_matching_codons_by_name(amino_acid):
     matching_codons = []
-    amino_acid_information = "Information not available"  # Default value if amino acid info is not found
+    amino_acid_information = ""
 
-    amino_acid_lower = amino_acid.lower()  # Convert to lowercase for case-insensitive comparison
+    amino_acid_lower = amino_acid.lower()
 
     for codon, acid in codon_table.items():
         if acid.lower() == amino_acid_lower:
@@ -92,13 +92,9 @@ def mrna_chain():
     else:
         return render_template("mrna_chain_input.html")
 
-
-
-
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
-
 
 @app.route("/exact_codon", methods=["GET", "POST"])
 def exact_codon():
@@ -124,7 +120,6 @@ def exact_codon():
         # If it's a GET request, render the input form
         return render_template("exact_codon_input.html")
 
-
 @app.route("/possible_combinations", methods=["GET", "POST"])
 def possible_combinations():
     if request.method == "POST":
@@ -134,7 +129,6 @@ def possible_combinations():
         return render_template("possible_combinations.html", sequence=sequence, all_codons=all_codons_dict)
     else:
         return render_template("possible_combinations_input.html")
-
 
 @app.route("/codon_by_name", methods=["GET", "POST"])
 def codon_by_name():

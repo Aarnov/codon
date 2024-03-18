@@ -30,17 +30,26 @@
 
                                 <h2 class="fw-bold mb-2 text-uppercase text-center">Codon.<span style="color: #f96f59;">Matcher</span></h2><br><br>
                                 <h5 class="text-center-all">Matching Codons for {{ amino_acid }}:</h5>
+                            {% if amino_acid_info %}
                                 <ul style="list-style-type: none; padding-left: 0;">
                                     {% for codon in matching_codons %}
                                         <li><div class="text-center" ><p class="mb-3 text-center-all"><b><span style="color: #f96f59;">{{ codon }}</span></b></p></div></li>
                                     {% endfor %}
                                 </ul>
+                                  {% else %}
+                                       <span style="color: rgba(255,0,0,0.69)"><p>No Codon avialable</p></span>
+                                    {% endif %}
+                            </div>
                                 <h5 class="text-center-all">Information about {{ amino_acid }}:</h5>
+                             {% if amino_acid_info %}
                                 <ul>
                                     {% for info in amino_acid_info %}
                                     <li><p class="mb-1 text-left-all">{{ info }}</p></li>
                                     {% endfor %}
                                 </ul>
+                                {% else %}
+                                        <span style="color: rgba(255,0,0,0.69)"><p>Informatio not Avialable.</p></span>
+                                    {% endif %}
                             </div>
                             <div class="text-center mt-3">
                             <a class="fw-bold mb-2 text-uppercase" href="/">Back</a>
