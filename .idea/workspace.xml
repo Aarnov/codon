@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a0b19703-eac1-46f9-9460-cc8e041a9598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index_page_images/0408fad2-af5d-4169-a9c5-db66b16c6dbc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/codon_by_name.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/codon_by_name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/codon_by_name_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/codon_by_name_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exact_codon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exact_codon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exact_codon_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exact_codon_input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mrna_chain_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mrna_chain_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mrna_chain_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mrna_chain_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/possible_combinations.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/possible_combinations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +150,14 @@
       <workItem from="1710620616279" duration="96000" />
       <workItem from="1710664075996" duration="10700000" />
       <workItem from="1710770227884" duration="416000" />
-      <workItem from="1710774120614" duration="3596000" />
+      <workItem from="1710774120614" duration="5122000" />
+      <workItem from="1710832452405" duration="593000" />
+      <workItem from="1711263060335" duration="15000" />
+      <workItem from="1711263149071" duration="51000" />
+      <workItem from="1711468698171" duration="219000" />
+      <workItem from="1711523560264" duration="3292000" />
+      <workItem from="1711530695694" duration="828000" />
+      <workItem from="1713258315849" duration="29000" />
     </task>
     <servers />
   </component>
@@ -173,6 +189,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/codon$main.coverage" NAME="main Coverage Results" MODIFIED="1710620422951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/codon$codon.coverage" NAME="codon Coverage Results" MODIFIED="1710777423288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/codon$codon.coverage" NAME="codon Coverage Results" MODIFIED="1711524746000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

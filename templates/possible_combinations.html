@@ -22,15 +22,15 @@
                                 <h2 class="fw-bold mb-2 text-uppercase">Codon.<span style="color: #f96f59;">Matcher</span></h2>
                                 <p class="text-white-50 mb-5">
                                     <h4>Possible Combinations for Sequence: {{ sequence }}</h4>
-                            {% if amino_acid_info %}
+                                {% if all_codons %}
                                     <ul style="list-style-type: none; padding-left: 0;">
                                         {% for key, value in all_codons.items() %}
                                         <li>{{ key }}: {{ value }}</li>
                                         {% endfor %}
                                     </ul>
-                               {% else %}
+                                {% else %}
                                         <span style="color: rgba(255,0,0,0.69)"><h3>Invalid Input</h3></span>
-                                    {% endif %}
+                                {% endif %}
                                 </p>
                             </div>
                             <a class="fw-bold mb-2 text-uppercase" href="/">Back</a>

@@ -58,29 +58,28 @@ def mrna_chain():
     if request.method == "POST":
         mrna_sequence = request.form["mrna_sequence"].upper()
 
-        # Initialize lists to store codons and errors
+
         codons = []
         errors = []
 
-        # Check if the input sequence has valid length
+
         if len(mrna_sequence) % 3 != 0:
             errors.append("Invalid input: MRNA sequence length should be a multiple of 3.")
 
-        # Check if the start codon is present only at the beginning
         start_codon = "AUG"
         if not mrna_sequence.startswith(start_codon):
             errors.append("Invalid input: MRNA sequence should start with 'AUG' (start codon).")
 
-        # Check if the stop codon is present only at the end
+
         stop_codons = ["UAA", "UAG", "UGA"]
         if not any(mrna_sequence.endswith(stop_codon) for stop_codon in stop_codons):
             errors.append("Invalid input: MRNA sequence should end with a stop codon ('UAA', 'UAG', 'UGA').")
 
-        # Check if start and stop codons are not in the middle
+
         if any(codon in mrna_sequence[3:-3] for codon in [start_codon] + stop_codons):
             errors.append("Invalid input: Start and stop codons should not appear in the middle of the MRNA sequence.")
 
-        # Process the mRNA chain to find codons and errors
+
         for i in range(0, len(mrna_sequence), 3):
             codon = mrna_sequence[i:i + 3]
             if codon_table.get(codon):
@@ -105,19 +104,19 @@ def exact_codon():
         codon = first_base + second_base + third_base
         amino_acid = codon_table.get(codon, "Unknown")
 
-        # Retrieve amino acid information
+
         amino_acid_information = "Information not available"
         amino_acid_lower = amino_acid.lower()
         if amino_acid_lower in amino_acid_info:
             amino_acid_information = amino_acid_info[amino_acid_lower]
 
-        # Calculate anticodon
+
         anticodon = calculate_anticodon(codon)
 
         return render_template("exact_codon.html", codon=codon, amino_acid=amino_acid,
                                amino_acid_info=amino_acid_information, anticodon=anticodon)
     else:
-        # If it's a GET request, render the input form
+
         return render_template("exact_codon_input.html")
 
 @app.route("/possible_combinations", methods=["GET", "POST"])
